@@ -1,0 +1,26 @@
+*{
+  font-family: 'Kaushan Script', cursive;
+}
+textarea{
+    resize: none;
+}
+.dAn{
+    position: relative;
+    animation-name: animated;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+  }
+  .uAn{
+    position: relative;
+    animation-name: an;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+  }@keyframes animated {
+    0%{transform: rotateY(180deg);}
+    100%{transform: rotateY(360deg);}
+  }  
+  @keyframes an{
+    0%{bottom: -5px;}
+   50%{bottom: 0;}
+    100%{bottom: 5px;}
+  }

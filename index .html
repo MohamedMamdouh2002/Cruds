@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Cruds</title>
+</head>
+<body>
+    <div class="container mt-2">
+        <h2 class="text-center">Product</h2>
+        <label for="productName ">Product Name:</label> 
+        <input type="text" id="productName" class=" form-control my-2">
+        <label for="productPrice ">product Price:</label> 
+        <input type="text" id="productPrice" class=" form-control my-2">
+        <label for="productCategory ">product Category:</label> 
+        <input type="text" id="productCategory" class=" form-control my-2">
+        <label for="productDesc ">product Desc:</label> 
+        <textarea type="text"id="productDesc" class=" form-control my-2 "></textarea>
+        <div  class="button d-flex justify-content-center mt-3">
+            <button   id="add" class="btn btn-primary d-block">Add Product</button>
+            <button   id="update" class="btn btn-warning d-none">Update Product</button>
+        </div>   
+        <table class="table table-striped-columns my-4" >
+            <input type="search"  onkeyup="searchProduct(this.value)" class="search form-control my-2"placeholder="Search by name">
+          
+
+                <thead class="text-center">
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+               <tbody id="tBody">
+               </tbody>
+        </table>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
